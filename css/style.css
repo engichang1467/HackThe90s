@@ -13,7 +13,7 @@
   position: fixed;
 
   bottom: 23px;
-  right: 28px;
+  right: 0px;
   width: 280px;
   
 }
@@ -28,8 +28,8 @@
 
   position: fixed;
 
-  bottom: 0px;
-  right: 69px;
+  Top: 0px;
+  right: 290px;
   width: 280px;
   
 }
