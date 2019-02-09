@@ -7,6 +7,7 @@
 </head>
 
 <body>
+  <!--Creating new log-in-->
   <script src="script/script.js"></script>
   <h1>3chat</h1>
   <img src="3hlyqx4novf01.jpg" width="100" hight="100">
@@ -25,9 +26,26 @@
     </form>
   </div>
 
+  <!--Creating new post-->
+  <script src="script/CreatePost.js"></script>
+  
+  <button class="open-button" onclick="openForm()">Create New Post</button>
+
+  <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1>Post</h1>
+
+      <label for="name"><b>Post</b></label>
+      <input type="text" placeholder="Write Something" Post="post" required>
+
+      <button type="submit" class="btn">Post</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+
   <footer class="main-footer">
     <span>&copy; 2016 M, Chang</span>
   </footer>
   </body>
 <!--bryan waz here-->
-</html>     
+</html>
