@@ -14,3 +14,15 @@ function openPost() {
 function closePost() {
   document.getElementById("postForm").style.display = "none";
 }
+
+function AddNewList () {
+
+  var list = document.getElementById("myOlist");
+  var theText = document.getElementById("post").value;
+
+  var entry = document.createElement('li');
+  
+  entry.appendChild(document.createTextNode(theText));
+  var newEntry = list.appendChild(entry);
+    
+}

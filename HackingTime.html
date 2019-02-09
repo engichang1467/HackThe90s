@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -35,17 +35,19 @@
     <form action="/action_page.php" class="form-container">
       <h1>Post</h1>
 
-      <label for="name"><b>Post</b></label>
-      <input type="text" placeholder="Write Something" Post="post" required>
+      <label for="name"><b>Create New Post</b></label>
+      <input type="text" id="post" placeholder="Write Something" Post="post" required>
 
-      <button type="submit" class="btn">Post</button>
+      <button type="button" class="btn" onclick="AddNewList()">Post</button>
       <button type="button" class="btn cancel" onclick="closePost()">Close</button>
     </form>
   </div>
 
+  <h3>What's on your mind today?</h3>
+  <ul id="myOlist"></ul>
+
   <footer class="main-footer">
-    <span>&copy; 2016 M, Chang</span>
+    <span>&copy; 2019 M. Chang, B. Chan, A. Zhang</span>
   </footer>
   </body>
-<!--bryan waz here-->
 </html>
