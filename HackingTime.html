@@ -29,9 +29,9 @@
   <!--Creating new post-->
   <script src="script/script.js"></script>
   
-  <button class="post-button" onclick="openForm()">Create New Post</button>
+  <button class="post-button" onclick="openPost()">Create New Post</button>
 
-  <div class="form-popup" id="myForm">
+  <div class="form-popup" id="postForm">
     <form action="/action_page.php" class="form-container">
       <h1>Post</h1>
 
@@ -39,7 +39,7 @@
       <input type="text" placeholder="Write Something" Post="post" required>
 
       <button type="submit" class="btn">Post</button>
-      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      <button type="button" class="btn cancel" onclick="closePost()">Close</button>
     </form>
   </div>
 

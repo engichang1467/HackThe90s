@@ -6,3 +6,11 @@ function openForm() {
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
+
+function openPost() {
+  document.getElementById("postForm").style.display = "block";
+}
+
+function closePost() {
+  document.getElementById("postForm").style.display = "none";
+}
