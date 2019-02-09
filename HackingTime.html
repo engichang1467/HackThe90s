@@ -3,16 +3,49 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Let's Hack</title>
+  <title>3chat</title>
 </head>
 
 <body>
-  <h1>Put your stuff here</h1>
+  <!--Creating new log-in-->
+  <script src="script/script.js"></script>
+  <h1>3chat</h1>
+  <img src="3hlyqx4novf01.jpg" width="100" hight="100">
 
+  <button class="open-button" onclick="openForm()">Login here</button>
+
+  <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1>Login</h1>
+
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter your name" name="name" required>
+
+      <button type="submit" class="btn">Login</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+
+  <!--Creating new post-->
+  <script src="script/script.js"></script>
+  
+  <button class="post-button" onclick="openForm()">Create New Post</button>
+
+  <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1>Post</h1>
+
+      <label for="name"><b>Post</b></label>
+      <input type="text" placeholder="Write Something" Post="post" required>
+
+      <button type="submit" class="btn">Post</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
 
   <footer class="main-footer">
     <span>&copy; 2016 M, Chang</span>
   </footer>
   </body>
 <!--bryan waz here-->
-</html>     
+</html>
