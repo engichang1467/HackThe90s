@@ -15,6 +15,6 @@ Hackathon project
 - We;ve a tough time linking our database to our list of posts
 - Since using php and sql are much difficult as we expect, we use firebase instead
 - It's our first time working with database
-- 
+
 # Accomplish that we are proud of
 - Despite of the technical difficulty of our project, we still found a way to solve out problems and finish it oon time
