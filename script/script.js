@@ -1,3 +1,34 @@
+var firebaseRef = firebase.database().ref();
+
+
+
+updatePosts();
+
+
+function updatePosts() {
+  var query = firebase.database().ref().orderByKey();
+  var list;
+
+  var entry;
+  query.once("value")
+    .then(function(snapshot) {
+      snapshot.forEach(function(childSnapshot) {
+        list = document.getElementById("myOlist");
+        entry = document.createElement('li');
+        var key = childSnapshot.key;
+        var childData = childSnapshot.val();
+        entry.appendChild(document.createTextNode(childData));
+        var newEntry = list.appendChild(entry);
+    });
+  });
+  
+  
+}
+
+
+
+
+
 
 
 // fucntions for opening and closing pop-up form
@@ -15,13 +46,12 @@ function openPost() {
 }
 
 function closePost() {
-  var firebaseRef = firebase.database().ref();
   document.getElementById("postForm").style.display = "none";
-  firebaseRef.child("Post").set("Blah");
 
 }
 
 function AddNewList () {
+  var firebaseRef = firebase.database().ref();
 
   var list = document.getElementById("myOlist");
   var theText = document.getElementById("post").value;
@@ -31,4 +61,5 @@ function AddNewList () {
   entry.appendChild(document.createTextNode(theText));
   var newEntry = list.appendChild(entry);
     
+  firebaseRef.push("Post").set(theText);
 }
