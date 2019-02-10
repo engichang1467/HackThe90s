@@ -1,4 +1,4 @@
-var firebaseRef = firebase.database().ref();
+
 
 // fucntions for opening and closing pop-up form
 function openForm() {
@@ -7,6 +7,7 @@ function openForm() {
 
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
+
 }
 
 function openPost() {
@@ -14,7 +15,10 @@ function openPost() {
 }
 
 function closePost() {
+  var firebaseRef = firebase.database().ref();
   document.getElementById("postForm").style.display = "none";
+  firebaseRef.child("Post").set("Blah");
+
 }
 
 function AddNewList () {
