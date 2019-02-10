@@ -1,3 +1,5 @@
+var firebaseRef = firebase.database().ref();
+
 // fucntions for opening and closing pop-up form
 function openForm() {
   document.getElementById("myForm").style.display = "block";
