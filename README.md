@@ -1,5 +1,4 @@
-# HackThe90s
-Hackathon project
+# 3Chat
 
 # Inpiration
 - To create a 90s version of the early messenger
@@ -18,3 +17,10 @@ Hackathon project
 
 # Accomplish that we are proud of
 - Despite of the technical difficulty of our project, we still found a way to solve out problems and finish it oon time
+
+# Want to try it out?
+- first open your terminal , and type ```git clone https://github.com/engichang1467/HackThe90s.git```
+- Once you got the repo, open **HackingTime.html** with your favourite browser 
+- On the site, you go to the top right counter and click on the **Create New Post** button
+- There will be a pop up that will tell you to write something on the text box
+- Once you finish writing on your text box, click on **post** and you will see what you wrote on the site
